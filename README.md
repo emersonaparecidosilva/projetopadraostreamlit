@@ -87,6 +87,7 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
       Network URL: http://SEU IP:8501
   
 - PRIMEIRA EXECUÇÃO: UTILIZADOR ADMIN CRIADO
+  
     Email: admin@projeto.com
   
     Senha Temporária: 25XKqpL3V&GQ
