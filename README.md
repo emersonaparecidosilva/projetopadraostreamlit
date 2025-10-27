@@ -83,11 +83,10 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
 You can now view your Streamlit app in your browser.
 
   Local URL: http://localhost:8501
+  
   Network URL: http://SEU IP:8501
   
-==================================================
 PRIMEIRA EXECUÇÃO: UTILIZADOR ADMIN CRIADO
 Email: admin@projeto.com
 Senha Temporária: 25XKqpL3V&GQ
 Por favor, guarde esta senha e altere-a no primeiro login.
-==================================================
