@@ -1,0 +1,36 @@
+Arquivos de ambiente virtual
+venv/
+*.venv
+env/
+.env
+
+Arquivos de segredos do Streamlit
+.streamlit/secrets.toml
+
+Arquivos de cache e compilados do Python
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Arquivos de build e distribuição
+build/
+dist/
+*.egg-info/
+sdist/
+wheel/
+*.egg
+
+Arquivos de IDE e editores
+.vscode/
+.idea/
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+
+Arquivos de testes
+.pytest_cache/
+.tox/
+.coverage

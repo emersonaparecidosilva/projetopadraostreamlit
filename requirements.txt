@@ -1,0 +1,6 @@
+streamlit
+mysql-connector-python
+bcrypt
+pandas
+streamlit-option-menu
+pyipp

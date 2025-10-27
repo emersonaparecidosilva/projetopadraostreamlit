@@ -1,0 +1,20 @@
+[theme]
+base = "dark"
+
+# Cor principal para botões, sliders, checkboxes, etc.
+primaryColor = "#FF4B4B"
+
+# Cor de fundo principal da aplicação
+backgroundColor = "#0F1116"
+
+# Cor de fundo da barra lateral
+secondaryBackgroundColor = "#1E1E2E"
+
+# Cor do texto principal
+textColor = "#FAFAFA"
+
+# Tipo de fonte
+font = "sans serif"
+
+[client]
+initialSidebarState = "expanded"
