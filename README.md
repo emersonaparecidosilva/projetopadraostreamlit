@@ -60,6 +60,8 @@ git clone https://github.com/emersonaparecidosilva/projetopadraostreamlit.git
 
 pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
 
+````
+
 ### 🐍 Passo 3: Configurar o Arquivo de Segredos (secrets.toml)
 - Crie a Pasta .streamlit
     - Dentro da pasta do projeto, crie uma nova pasta e renomeie-a para exatamente .streamlit (com o ponto no início).
@@ -70,9 +72,15 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
     host = "localhost"
     user = "USUARIO"
     password = "SUA_SENHA_AQUI"
-- Rode o app pelo terminal = streamlit run app.py
+
+    # Configuração do seu E-mail (Ex: Gmail)
+    [email]
+    sender_email = "SEU EMAIL@gmail.com"
+    sender_password = "Sua Senha de APP 12 DIGITOS"
+    
+###🐍 Passo 4: Rode o app pelo terminal na pasta do projeto = streamlit run app.py
 
 ### Para entrar no sistema pela primeira vez, use as credenciais de administrador padrão:
 
 - Email: admin@projeto.com
-- Senha: Projeto2025
+- Senha: Veja o terminal, irá apresentar a senha temporária
