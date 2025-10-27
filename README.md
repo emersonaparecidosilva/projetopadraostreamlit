@@ -57,7 +57,6 @@ cd PastadoProjeto
 git clone https://github.com/emersonaparecidosilva/projetopadraostreamlit.git
 
 ### Instale as bibliotecas 
-
 pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
 
 ````
@@ -66,21 +65,29 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
 - Crie a Pasta .streamlit
     - Dentro da pasta do projeto, crie uma nova pasta e renomeie-a para exatamente .streamlit (com o ponto no início).
 
-- Crie o Arquivo secrets.toml
-    -  Abra o Bloco de Notas, cole o conteúdo abaixo e salve o arquivo como secrets.toml dentro da pasta .streamlit.
+-  Crie e edite o arquivo secrets.toml, cole o conteúdo abaixo e salve o arquivo dentro da pasta .streamlit.
     [mysql]
     host = "localhost"
     user = "USUARIO"
     password = "SUA_SENHA_AQUI"
 
-    # Configuração do seu E-mail (Ex: Gmail)
+    - Configuração do seu E-mail (Ex: Gmail)
     [email]
     sender_email = "SEU EMAIL@gmail.com"
     sender_password = "Sua Senha de APP 12 DIGITOS"
     
-###🐍 Passo 4: Rode o app pelo terminal na pasta do projeto = streamlit run app.py
+### 🐍 Passo 4: Rode o app pelo terminal na pasta do projeto = streamlit run app.py
 
-### Para entrar no sistema pela primeira vez, use as credenciais de administrador padrão:
+### Para entrar no sistema pela primeira vez, observe o retorno no terminal:
 
-- Email: admin@projeto.com
-- Senha: Veja o terminal, irá apresentar a senha temporária
+You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://SEU IP:8501
+  
+==================================================
+PRIMEIRA EXECUÇÃO: UTILIZADOR ADMIN CRIADO
+Email: admin@projeto.com
+Senha Temporária: 25XKqpL3V&GQ
+Por favor, guarde esta senha e altere-a no primeiro login.
+==================================================
