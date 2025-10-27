@@ -88,5 +88,7 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
   
 - PRIMEIRA EXECUÇÃO: UTILIZADOR ADMIN CRIADO
     Email: admin@projeto.com
+  
     Senha Temporária: 25XKqpL3V&GQ
+  
     Por favor, guarde esta senha e altere-a no primeiro login.
