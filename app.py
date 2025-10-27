@@ -136,15 +136,13 @@ else:
         PAGE_MAP = {
             "page_home": ("Dashboard", "house-fill"),
             "page_perfil": ("Meu Perfil", "person-fill"),
-            "page_impressoras": ("Gerenciar Impressoras", "printer-fill"),
             "page_setores": ("Gerenciar Setores", "buildings-fill"),
-            "page_ativos": ("Gestão de Ativos", "hdd-stack-fill"),
             "page_gerenciamento": ("Gerenciar Usuários", "people-fill"),
             "page_permissoes": ("Gerenciar Permissões", "shield-lock-fill"),
             "page_logs": ("Trilha de Auditoria", "clock-history"),
             "page_personalizacao": ("Personalizar", "palette-fill")
         }
-        ordered_pages = ["page_home", "page_perfil","page_ativos", "page_impressoras", "page_setores",
+        ordered_pages = ["page_home", "page_perfil", "page_setores",
                          "page_gerenciamento", "page_permissoes", "page_logs",
                          "page_personalizacao"]
 
@@ -198,8 +196,6 @@ else:
         st.warning("Acesso restrito. Por favor, altere sua senha na página 'Meu Perfil'.")
     elif selected_page_name == "page_home":
         v.show_home_page(conn)
-    elif selected_page_name == "page_impressoras":
-        v.show_impressoras_page(conn)
     elif selected_page_name == "page_setores":
         v.show_setores_page(conn)
     elif selected_page_name == "page_gerenciamento":
@@ -210,8 +206,6 @@ else:
         v.show_logs_page(conn)
     elif selected_page_name == "page_personalizacao":
         v.show_personalizacao_page(conn)
-    elif selected_page_name == "page_ativos":
-        v.show_ativos_page(conn)
     elif selected_display_name:
         st.error("Página não encontrada.")
 

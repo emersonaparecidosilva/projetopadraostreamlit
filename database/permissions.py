@@ -22,7 +22,7 @@ def populate_initial_permissions(conn):
 
     # --- LISTA DE PÁGINAS ATUALIZADA ---
     pages = [
-        "page_home", "page_perfil", "page_ativos", "page_impressoras", "page_setores",
+        "page_home", "page_perfil", "page_setores",
         "page_gerenciamento", "page_permissoes", "page_logs",
         "page_personalizacao"
     ]
@@ -32,8 +32,6 @@ def populate_initial_permissions(conn):
     default_rules = {
         "page_home": ["admin", "técnico", "padrão"],
         "page_perfil": ["admin", "técnico", "padrão"],
-        "page_ativos": ["admin"],
-        "page_impressoras": ["admin", "técnico"],
         "page_setores": ["admin"],
         "page_gerenciamento": ["admin"],
         "page_permissoes": ["admin"],

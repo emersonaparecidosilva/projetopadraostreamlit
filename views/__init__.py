@@ -9,11 +9,9 @@
 
 from .home import show_home_page
 from .perfil import show_perfil_page
-from .impressoras import show_impressoras_page
 from .setores import show_setores_page
 from .gerenciamento import show_gerenciamento_page
 from .permissoes import show_permissoes_page
 from .logs import show_logs_page
 from .personalizacao import show_personalizacao_page
 from .reset import show_reset_page
-from .ativos import show_ativos_page

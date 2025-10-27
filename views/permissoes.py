@@ -37,13 +37,11 @@ def show_permissoes_page(conn):
     page_display_names = {
         "page_home": "Dashboard",
         "page_perfil": "Meu Perfil",
-        "page_impressoras": "Gerenciar Impressoras",
         "page_setores": "Gerenciar Setores",
         "page_permissoes": "Gerenciar Permissões",
         "page_gerenciamento": "Gerenciar Usuários",
         "page_logs": "Gerenciar Logs",
-        "page_personalizacao": "Personalizar",
-        "page_ativos": "Gerenciar Ativos"
+        "page_personalizacao": "Personalizar"
     }
 
     # Agrupa as permissões por página para exibição
