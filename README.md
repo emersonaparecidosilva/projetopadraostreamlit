@@ -77,6 +77,7 @@ host = "localhost"
 user = "usuario-adm-banco"
 password = "senha-banco"
 database = "nome-do-banco"
+# Caso a base ainda não exista, o sistema irá criar automaticamente, basta dar um nome.
 
 # Configuração do seu E-mail (Ex: Gmail)
 [email]
