@@ -1,6 +1,7 @@
 # 📘 Guia de Instalação e Execução do Aplicativo
 
 Olá! Este é um guia completo para você configurar e rodar o aplicativo padrão em streamlit com controle de usuários em seu computador.  
+
 Siga os passos com atenção e tudo dará certo! 🚀
 
 ---
@@ -16,7 +17,7 @@ Siga os passos com atenção e tudo dará certo! 🚀
 
 ## 🧩 Passo 1: Instalar o MySQL (Nosso Banco de Dados)
 
-O **MySQL Server** é o programa que vai armazenar os dados dos usuários.
+O **MySQL Server** é o programa que vai armazenar os dados de nossa aplicação.
 
 ### 🔽 Baixe o Instalador
 
@@ -44,21 +45,23 @@ Agora vamos preparar o ambiente para rodar o código do nosso aplicativo.
 1. Acesse [python.org](https://www.python.org/downloads/) e baixe a versão **3.13**.  
 2. Durante a instalação, **marque a caixa** `Add Python to PATH` antes de clicar em **Install Now**.
 
-### 🧭 Abra o Terminal
-
-Pressione a tecla **Windows**, digite **cmd** e pressione **Enter**.
-
----
-
-### 📂 Obtenha os Arquivos do Projeto
+### 🧭 Abra o Terminal de sua preferência e Obtenha os Arquivos do Projeto
 
 ```bash
 cd PastadoProjeto
 git clone https://github.com/emersonaparecidosilva/projetopadraostreamlit.git
 
-### Instale as bibliotecas 
-pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
+### Habilite o ambiente Virtual
+python -m venv .venv
 
+### Ative o ambiente
+.venv\Scripts\activate
+
+### Caso os scripts estejam bloqueados:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+### Instale as bibliotecas 
+pip install -r requirements.txt
 ````
 
 ### 🐍 Passo 3: Configurar o Arquivo de Segredos (secrets.toml)
@@ -70,6 +73,7 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
     host = "localhost"
     user = "USUARIO"
     password = "SUA_SENHA_AQUI"
+    database = "pio"
 
     - Configuração do seu E-mail (Ex: Gmail)
     [email]
@@ -90,6 +94,8 @@ pip install streamlit pandas mysql-connector-python bcrypt streamlit-option-menu
   
     Email: admin@projeto.com
   
-    Senha Temporária: 25XKqpL3V&GQ
+    Senha Temporária: Senha exposta no terminal
   
     Por favor, guarde esta senha e altere-a no primeiro login.
+
+  ### 🐍 Passo 5: Utilize o sistema, navegue e configure como quiser.
