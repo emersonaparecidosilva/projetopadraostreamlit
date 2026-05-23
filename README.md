@@ -36,7 +36,7 @@ O **MySQL Server** é o programa que vai armazenar os dados de nossa aplicação
 
 ---
 
-## 🐍 Passo 2: Preparar o Ambiente Python e o Projeto
+## 🧩 Passo 2: Preparar o Ambiente Python e o Projeto
 
 Agora vamos preparar o ambiente para rodar o código do nosso aplicativo.
 
@@ -64,38 +64,48 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 pip install -r requirements.txt
 ````
 
-### 🐍 Passo 3: Configurar o Arquivo de Segredos (secrets.toml)
+### 🧩 Passo 3: Configurar o Arquivo de Segredos (secrets.toml)
 - Crie a Pasta .streamlit
     - Dentro da pasta do projeto, crie uma nova pasta e renomeie-a para exatamente .streamlit (com o ponto no início).
 
 -  Crie e edite o arquivo secrets.toml, cole o conteúdo abaixo e salve o arquivo dentro da pasta .streamlit.
-    [mysql]
-    host = "localhost"
-    user = "USUARIO"
-    password = "SUA_SENHA_AQUI"
-    database = "pio"
+  
+```bash
+# Coloque aqui as credenciais do seu banco de dados local/remoto MySQL
+[mysql]
+host = "localhost"
+user = "root"
+password = "root"
+database = "pio"
 
-    - Configuração do seu E-mail (Ex: Gmail)
-    [email]
-    sender_email = "SEU EMAIL@gmail.com"
-    sender_password = "Sua Senha de APP 12 DIGITOS"
+# Configuração do seu E-mail (Ex: Gmail)
+[email]
+sender_email = "SEU EMAIL@gmail.com"
+sender_password = "Sua Senha de APP 12 DIGITOS"
+````
     
-### 🐍 Passo 4: Rode o app pelo terminal na pasta do projeto = streamlit run app.py
+### 🧩 Passo 4: Rode o app pelo terminal na pasta do projeto
 
-- Para entrar no sistema pela primeira vez, observe o retorno no terminal:
+```bash
+streamlit run app.py
+````
 
-    You can now view your Streamlit app in your browser.
-    
-      Local URL: http://localhost:8501
-      
-      Network URL: http://SEU IP:8501
+- Observe o retorno no terminal:
   
-- PRIMEIRA EXECUÇÃO: UTILIZADOR ADMIN CRIADO
-  
-    Email: admin@projeto.com
-  
-    Senha Temporária: Senha exposta no terminal
-  
-    Por favor, guarde esta senha e altere-a no primeiro login.
+```bash
+2026-05-23 09:43:56.748 Uvicorn server started on 0.0.0.0:8501
 
-  ### 🐍 Passo 5: Utilize o sistema, navegue e configure como quiser.
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.102:8501
+
+==================================================
+PRIMEIRA EXECUÇÃO: UTILIZADOR ADMIN CRIADO
+Email: admin@projeto.com
+Senha Temporária: senhaforte
+Por favor, guarde esta senha e altere-a no primeiro login.
+==================================================l
+````  
+
+### 🧩 Passo 5: Utilize o sistema, navegue e configure como quiser.
