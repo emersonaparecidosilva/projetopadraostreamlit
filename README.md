@@ -74,9 +74,9 @@ pip install -r requirements.txt
 # Coloque aqui as credenciais do seu banco de dados local/remoto MySQL
 [mysql]
 host = "localhost"
-user = "root"
-password = "root"
-database = "pio"
+user = "usuario-adm-banco"
+password = "senha-banco"
+database = "nome-do-banco"
 
 # Configuração do seu E-mail (Ex: Gmail)
 [email]
